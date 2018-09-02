@@ -14,7 +14,7 @@
                 VerticalAlignment="Top" 
                 Width="49" Height="36" Click="btn_load_Click"/>
         <Label x:Name="label" Content="Esri Korea Professional Service Add-In Dynamic Loader" Margin="10,10,10,0" Width="280" Height="26" VerticalAlignment="Top" HorizontalContentAlignment="Center" HorizontalAlignment="Center" FontSize="11"/>
-        <Label x:Name="label1" Content="Powered by nylee@esrikr.com" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="116,364,0,0"/>
+        <Label x:Name="label1" Content="Powered by deanly88@gmail.com" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="116,364,0,0"/>
         <TextBox x:Name="tbx_filepath" 
                  HorizontalAlignment="Left" 
                  Height="36" 
