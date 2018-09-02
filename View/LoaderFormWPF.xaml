@@ -1,0 +1,61 @@
+﻿<UserControl x:Class="DynamicDllLoader.LoaderFormWPF"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DynamicDllLoader"
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="300" Background="#FFD7D7D7">
+    <Grid>
+        <Button x:Name="btn_load" 
+                Content="Load" 
+                HorizontalAlignment="Left" 
+                Margin="241,96,0,0" 
+                VerticalAlignment="Top" 
+                Width="49" Height="36" Click="btn_load_Click"/>
+        <Label x:Name="label" Content="Esri Korea Professional Service Add-In Dynamic Loader" Margin="10,10,10,0" Width="280" Height="26" VerticalAlignment="Top" HorizontalContentAlignment="Center" HorizontalAlignment="Center" FontSize="11"/>
+        <Label x:Name="label1" Content="Powered by nylee@esrikr.com" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="116,364,0,0"/>
+        <TextBox x:Name="tbx_filepath" 
+                 HorizontalAlignment="Left" 
+                 Height="36" 
+                 Margin="17,96,0,0" 
+                 TextWrapping="Wrap" 
+                 Text="C:\....\*.dll" 
+                 VerticalAlignment="Top" 
+                 Width="219" 
+                 TextChanged="tbx_filepath_TextChanged"/>
+        <Label x:Name="label2" Content="Path (*.dll)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,81,0,0" Height="15" Width="108" FontSize="10" Padding="0"/>
+        <Label x:Name="display_label" Content="Load your file first.." HorizontalAlignment="Center" Margin="17,50,10,0" VerticalAlignment="Top" Width="273" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+        <ListBox x:Name="ltx_classes" 
+                 HorizontalAlignment="Left" 
+                 Height="136" 
+                 Margin="17,159,0,0" 
+                 VerticalAlignment="Top" 
+                 Width="219" 
+                 SelectionChanged="listBox_SelectionChanged"/>
+        <Button x:Name="btn_select_class" 
+                Content="Select" 
+                HorizontalAlignment="Left" 
+                Margin="241,159,0,0" 
+                VerticalAlignment="Top" 
+                Width="49" Height="45" Click="btn_select_class_Click" 
+                />
+        <Label x:Name="label2_Copy" Content="Select Classes" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,144,0,0" Height="15" Width="108" FontSize="10" Padding="0"/>
+        <Label x:Name="label2_Copy1" Content="Method Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,304,0,0" Height="15" Width="108" FontSize="10" Padding="0"/>
+        <TextBox x:Name="tbx_method" 
+            HorizontalAlignment="Left" 
+            Height="23" 
+            Margin="17,319,0,0" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="219" 
+            TextChanged="tbx_method_TextChanged"/>
+        <Button x:Name="btn_execute" 
+            Content="Execute" 
+            HorizontalAlignment="Left" 
+            Margin="241,319,0,0" 
+            VerticalAlignment="Top" 
+            Width="49" Height="23" Click="btn_execute_Click"/>
+
+    </Grid>
+</UserControl>
