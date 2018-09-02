@@ -31,5 +31,8 @@ public class YourExtension: ESRI.ArcGIS.Desktop.AddIns.Button
 ## How to use
 1. Build this with your ArcGIS.
 2. Add an extensions to ArcGIS.
-3. Run a small window. Select the dll file you want to dynamically load.
-4. Select the class, select the Entry function you want to execute, and click the Run button.
+3. When you run it, a small window appears. 
+4. Select the dll file you want to dynamically load.
+5. Select the **class**.
+6. Select the **Entry function** you want to execute. 
+7. click the **Execute** button.
